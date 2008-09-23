@@ -1,0 +1,6 @@
+render_partial_comments
+=======================
+
+Simple plugin for adding begin/end partial html comments to render output in development mode.
+
+Nothing to setup, just install the plugin.

@@ -15,8 +15,6 @@ $render_partial_comments = true
 usage
 =====
 
-Nothing to setup, just install the plugin.
-
 It should add something like the following to your rendered pages (in development mode).
 
 <!-- render_begin 'user/view' -->

@@ -8,6 +8,10 @@ install
 
 ruby script/plugin install git://github.com/avvo/render_partial_comments.git
 
+Add the following you to config/environments/development.rb (or whichever env you like)
+
+$render_partial_comments = true
+
 usage
 =====
 

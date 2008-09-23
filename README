@@ -3,4 +3,18 @@ render_partial_comments
 
 Simple plugin for adding begin/end partial html comments to render output in development mode.
 
+install
+=======
+
+ruby script/plugin install git://github.com/avvo/render_partial_comments.git
+
+useage
+=====
+
 Nothing to setup, just install the plugin.
+
+It should add something like the following to your rendered pages (in development mode).
+
+<!-- render_begin 'user/view' -->
+...
+<!-- render_end 'user/view' -->

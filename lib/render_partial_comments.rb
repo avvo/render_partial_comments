@@ -5,13 +5,11 @@ class ActionView::Base
   
   private
   
-  def self.perform_partial_comments?
-    # TODO: make this some kind of configuration in environments
-    RAILS_ENV == 'development'
-  end
+  $render_partial_comments ||= false
   
-  # don't even define this method if we don't want it enabled
-  if perform_partial_comments?
+  # don't even define this method if we don't want it enabled (that way there is no
+  # overhead in non-development environments
+  if $render_partial_comments
 
     # render_partial(partial_path, object_assigns = nil, local_assigns = {})
     def render_partial_with_comments(partial_path, object_assigns = nil, local_assigns = {})
